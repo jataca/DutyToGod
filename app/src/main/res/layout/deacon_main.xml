@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/blue"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="OFFICE:" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/office"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deacon"
+        android:id="@+id/deacon"
+        android:onClick="deaconMain"
+        android:layout_below="@+id/office"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More offices coming soon!"
+        android:textStyle="italic"
+        android:textSize="24dp"
+        android:layout_below="@+id/deacon"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+<!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teacher"
+        android:id="@+id/teacher"
+        android:layout_below="@+id/deacon"
+        android:layout_alignLeft="@+id/priest"
+        android:layout_alignStart="@+id/priest" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priest"
+        android:id="@+id/priest"
+        android:layout_below="@+id/teacher"
+        android:layout_centerHorizontal="true" />
+-->
+    <TextView android:text="TOPIC:" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topic"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/office"
+        android:layout_alignEnd="@+id/office"
+        android:textSize="24dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spiritual Strength"
+        android:id="@+id/ss"
+        android:layout_below="@+id/topic"
+        android:layout_centerHorizontal="true"
+        android:onClick="deaconSS"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More topics coming soon!"
+        android:textStyle="italic"
+        android:textSize="24dp"
+        android:layout_below="@+id/ss"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priesthood Duties"
+        android:id="@+id/pd"
+        android:layout_below="@+id/ss"
+        android:layout_centerHorizontal="true"
+        android:onClick="deaconPD"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For the Strength of Youth"
+        android:id="@+id/ftsoy"
+        android:layout_below="@+id/pd"
+        android:layout_centerHorizontal="true"
+        android:onClick="deaconFTSY"/>
+
+        -->
+
+</RelativeLayout>
